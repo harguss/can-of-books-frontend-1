@@ -1,4 +1,32 @@
-## Logistical  
+# Project Name
+
+**Author**: Susan Hargus and Leah Wilner
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## Overview
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+## Getting Started
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Estimates
+<!-- See below -->
+
+## Credit and Collaborations
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+
+## Team Agreement
+
+### Logistical  
 
 1. What hours will you be available to communicate?  
     Any, will respond when available  
@@ -12,7 +40,7 @@
 4. What is your plan if you start to fall behind? 
     Ask for help from Jack and Craig
 
-## Cooperative  
+### Cooperative  
 
 1. Make a list of each parson’s strengths. 
     Susan- Artistic, makes beautiful pages, a lot of preserverance
@@ -28,7 +56,7 @@
 4. Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?  
     We will review our work with each other everyday and explain and how it works  
 
-## Conflict Resolution  
+### Conflict Resolution  
 
 1. What will your team do if one person is pulling all the weight while the other person is not contributing?  
     We will be alternating branches each time so there will be an aspect of built-in accountability. If one person is not we will have a meeting with Craig to discuss concerns.
