@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Logistical  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. What hours will you be available to communicate?  
+    Any, will respond when available  
 
-## Available Scripts
+2. What platform will you use to communicate (ie. Slack, phone …)?  
+    Slack
 
-In the project directory, you can run:
+3. How often will you take breaks? 
+    Every hour or as needed
 
-### `npm start`
+4. What is your plan if you start to fall behind? 
+    Ask for help from Jack and Craig
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cooperative  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Make a list of each parson’s strengths. 
+    Susan- Artistic, makes beautiful pages, a lot of preserverance
+    Leah- Ask a lot of questions, a basic understanding of the project, always come to class
 
-### `npm test`
+2. How can you best utilize these strengths in the development of your application? 
+    We plan to attend every class, ask questions, and make a beautiful can of books
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. In what areas do you each want to develop greater strength? 
+    Leah- a better understanding of the code
+    Susan- a better understanding of functions and how to use database
 
-### `npm run build`
+4. Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?  
+    We will review our work with each other everyday and explain and how it works  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Conflict Resolution  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. What will your team do if one person is pulling all the weight while the other person is not contributing?  
+    We will be alternating branches each time so there will be an aspect of built-in accountability. If one person is not we will have a meeting with Craig to discuss concerns.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. What will your team do if one person is taking over the project and not letting the other member contribute? 
+    We will be alternating branches each time so there will be an aspect of built-in accountability and delegating tasks. If one person is not collaborating we will have a meeting with Craig to discuss concerns.
 
-### `npm run eject`
+3. How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?  
+    We'll work through it together and help each other, especially when we are reviewing and explaining our code.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
