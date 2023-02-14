@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Carousel } from "react-bootstrap";
 import "./App.css";
-import About from './About.js';
+// import About from './About.js';
 
 let SERVER = process.env.REACT_APP_SERVER;
 
@@ -22,7 +22,7 @@ class App extends React.Component {
         books: results.data,
       });
     } catch (error) {
-      console.log("error found: ", error.response.data);
+      console.log("error found: ", error.message);
     }
   };
 
@@ -37,6 +37,7 @@ class App extends React.Component {
         <p>
           {book.title} is {book.description}
         </p>
+        <img src={`http://placekitten.com/g/200/300`} alt={'cat'}/>
       </Carousel.Item>
     ));
     return (
