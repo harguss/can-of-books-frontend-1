@@ -1,4 +1,4 @@
-body {
+section {
   margin-top: 3rem;
   background-color: rgb(45, 76, 66);
 }
@@ -33,11 +33,11 @@ h1 {
   height: 700px;
   width: 600px;
   margin: 0 auto;
-  text-align: center;
+ /* text-align: center;
   background-color: #ddd;
   border-radius: 10px;
   padding: 20px;
-  padding-top: 60px;
+  padding-top: 60px;  */
 }
 
 .carousel-control-prev,

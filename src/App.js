@@ -15,15 +15,15 @@ class App extends React.Component {
   }
 
   getBooks = async () => {
-    // try {
+    try {
       let results = await axios.get(`${SERVER}/books`);
       console.log("results from API", results);
-      // this.setState({
-      //   books: results.data,
-      // });
-    // } catch (error) {
-    //   console.log("error found: ", error.response.data);
-    // }
+      this.setState({
+        books: results.data,
+      });
+    } catch (error) {
+      console.log("error found: ", error.response.data);
+    }
   };
 
   componentDidMount() {
@@ -41,7 +41,7 @@ class App extends React.Component {
     ));
     return (
       <>
-      
+      <section>
         <header>
           <h1>Good Reads</h1>
         </header>
@@ -53,7 +53,7 @@ class App extends React.Component {
           )}
         </main>
         {/* <About /> */}
-    
+        </section>
       </>
   );
 }
