@@ -51,6 +51,7 @@ class App extends React.Component {
             <p>The book collection is empty.</p>
           )}
         </main>
+        {/* <About /> */}
       </body>
   );
 }
