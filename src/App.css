@@ -38,9 +38,9 @@ header {
 
 
 
-.carousel-inner {
+/* .carousel-inner {
 
-}
+} */
 
 .carousel-container {
   display: flex;
@@ -80,5 +80,16 @@ header {
 .carousel-control-next:hover {
   background-color: #999;
   cursor: pointer;
+}
+nav {
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(45, 76, 66);
+
 }
 

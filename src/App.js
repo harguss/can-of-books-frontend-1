@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
 import { Carousel } from "react-bootstrap";
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import Nav from 'react-bootstrap/Nav';
 import "./App.css";
 // import About from './About.js';
 
@@ -37,34 +39,45 @@ class App extends React.Component {
       <Carousel.Item key={book._id}>
         {/* <img src={book.cover} alt="Book cover" /> */}
         <h3>{book.title}</h3>
-          <p>{book.description}</p>
-          
+        <p>{book.description}</p>
+
         {/* <Carousel.Caption>
           <h3>{book.title}</h3>
           <p>{book.description}</p>
           <img src={`http://placekitten.com/g/200/300`} alt={'cat'} />
         </Carousel.Caption> */}
-      
+
       </Carousel.Item>
     ));
     return (
       <>
-       
-          <header>Good Reads</header>
 
-          
-       
-        <main className="carousel-container">
-          {this.state.books.length > 0 ? (
-            <Carousel>{books}</Carousel>
-          ) : (
-            <p>The book collection is empty.</p>
-          )}
-       </main>
-     
-          
-           {/* <About /> */}
-     
+
+        {/* <BrowserRouter> */}
+        <>
+          <header><h1>Good Reads</h1> </header>
+          <nav>
+            <ul>
+              {/* <li><link to="/about">About</link></li> */}
+              <a href="./About" >About</a>
+            </ul>
+          </nav>
+
+
+          {/* <Routes>
+              <Route path="/About" element={<About/>} />
+            </Routes> */}
+
+          <main className="carousel-container">
+            {this.state.books.length > 0 ? (
+              <Carousel>{books}</Carousel>
+            ) : (
+              <p>The book collection is empty.</p>
+            )}
+          </main>
+        </>
+        {/* </BrowserRouter> */}
+
       </>
     );
   }
