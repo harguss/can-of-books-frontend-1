@@ -33,8 +33,8 @@ class App extends React.Component {
     event.preventDefault();
     let newBook = {
       title: event.target.title.value,
-      description: target.description.value,
-      status: target.status.value,
+      description: event.target.description.value,
+      status: event.target.status.value,
     };
     console.log(newBook);
     this.postBook(newBook);
