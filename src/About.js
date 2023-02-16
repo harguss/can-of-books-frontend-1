@@ -1,4 +1,6 @@
 import React from "react";
+import "./About.css"; 
+
 
 
 
@@ -11,7 +13,7 @@ class About extends React.Component {
    
     return (
      <>
-     hello from about
+     <h1>All about Leah and Susan</h1>
      </>
   );
 }
