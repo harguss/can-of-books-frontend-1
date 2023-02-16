@@ -29,6 +29,43 @@ class App extends React.Component {
     }
   };
 
+  handleBookSubmit = async (event) => {
+    event.preventDefault();
+    let newBook = {
+      title: event.target.title.value,
+      description: target.description.value,
+      status: target.status.value,
+    };
+    console.log(newBook);
+    this.postBook(newBook);
+  };
+
+  postBook = async (newBookObject) => {
+    try {
+      let url = `${SERVER}/books`;
+      let createdBook = await axios.post(url, newBookObject);
+      console.log('createdBook', createdBook);
+      this.setState({books:[...this.state.books, createdBook.data],
+      });
+    } catch (error) {
+      console.log('We have an error: ', error.response.data);
+    }
+  };
+
+  deleteBook = async (id) => {
+    try {
+      let url = `${SERVER}/books/${id}`;
+      await axios.delete(url);
+      let updatedBooks = this.state.books.filter((book) => 
+        book._id !== id
+      );
+      this.setState({books: updatedBooks})
+    } catch (error) {
+      console.log('We have an error: ', error.response.data);
+    }
+  };
+
+
   componentDidMount() {
     this.getBooks();
   }
