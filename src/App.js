@@ -2,7 +2,9 @@ import React from "react";
 import axios from "axios";
 import { Carousel } from "react-bootstrap";
 import "./App.css";
-import "../CreateBook.js"
+import CreateBook from './components/CreateBook';
+
+
 import Button from 'react-bootstrap/Button'; 
 // import About from './About.js';
 // import Nav from "./Nav";
@@ -100,7 +102,7 @@ class App extends React.Component {
           
         </main>
         
-        <Button variant="outline-secondary"onClick={this.handleButtonClick}>Add Books</Button>
+        <CreateBook />
         
         {/* <About /> */}
         </section>

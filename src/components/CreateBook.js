@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from 'react-bootstrao/Form';
+import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {Container} from 'react-bootstrap';
 
@@ -20,7 +20,8 @@ class CreateBook extends React.Component {
                     <Form.Group controlid="status">
                         <Form.Check type="checkbox" label="Available" />
                     </Form.Group>
-                    <Button type="submit">Add Book</Button>
+                    {/* <Button type="submit">Add Book</Button> */}
+                    <Button variant="outline-secondary"onClick={this.handleButtonClick}>Add Books</Button>
                 </Form>
             </Container>
         )
