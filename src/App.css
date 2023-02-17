@@ -35,6 +35,15 @@ header {
 
 }
 
+outline-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    
+  
+}
+
 
 
 
@@ -80,16 +89,5 @@ header {
 .carousel-control-next:hover {
   background-color: #999;
   cursor: pointer;
-}
-nav {
-  font-size: 30px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(45, 76, 66);
-
 }
 

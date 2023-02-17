@@ -1,11 +1,10 @@
 import React from "react";
 import axios from "axios";
 import { Carousel } from "react-bootstrap";
-// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-// import Nav from 'react-bootstrap/Nav';
 import "./App.css";
-// import About from './About.js';
+import Button from 'react-bootstrap/Button'; 
+import About from './About.js';
+// import Nav from "./Nav";
 
 let SERVER = process.env.REACT_APP_SERVER;
 
@@ -25,8 +24,11 @@ class App extends React.Component {
         books: results.data,
       });
     } catch (error) {
-      console.log("error found: ", error.message);
+      console.log("error found: ", error.response.data);
     }
+  };
+  handleButtonClick = () => {
+    console.log("Button clicked");
   };
 
   componentDidMount() {
@@ -35,52 +37,38 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.books);
+
     let books = this.state.books.map((book) => (
       <Carousel.Item key={book._id}>
-        {/* <img src={book.cover} alt="Book cover" /> */}
-        <h3>{book.title}</h3>
-        <p>{book.description}</p>
-
-        {/* <Carousel.Caption>
-          <h3>{book.title}</h3>
-          <p>{book.description}</p>
-          <img src={`http://placekitten.com/g/200/300`} alt={'cat'} />
-        </Carousel.Caption> */}
-
+        <p>
+          {book.title} is {book.description}
+        </p>
       </Carousel.Item>
     ));
     return (
       <>
-
-
-        {/* <BrowserRouter> */}
-        <>
-          <header><h1>Good Reads</h1> </header>
-          <nav>
-            <ul>
-              {/* <li><link to="/about">About</link></li> */}
-              <a href="./About" >About</a>
-            </ul>
-          </nav>
-
-
-          {/* <Routes>
-              <Route path="/About" element={<About/>} />
-            </Routes> */}
-
-          <main className="carousel-container">
-            {this.state.books.length > 0 ? (
-              <Carousel>{books}</Carousel>
-            ) : (
-              <p>The book collection is empty.</p>
-            )}
-          </main>
-        </>
-        {/* </BrowserRouter> */}
-
+      <section>
+        <header>
+          <h1>Good Reads</h1>
+        </header>
+       <main className="carousel-container">
+          {this.state.books.length > 0 ? (
+            <Carousel>{books}</Carousel>
+          ) : (
+            <p>The book collection is empty.</p>
+          )}
+        
+          
+          
+        </main>
+        
+        <Button variant="outline-secondary"onClick={this.handleButtonClick}>Add Books</Button>
+        
+        {/* <About /> */}
+        </section>
       </>
-    );
-  }
+  );
+}
 }
 
 
