@@ -2,8 +2,9 @@ import React from "react";
 import axios from "axios";
 import { Carousel } from "react-bootstrap";
 import "./App.css";
+import "../CreateBook.js"
 import Button from 'react-bootstrap/Button'; 
-import About from './About.js';
+// import About from './About.js';
 // import Nav from "./Nav";
 
 let SERVER = process.env.REACT_APP_SERVER;

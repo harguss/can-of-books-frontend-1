@@ -13,9 +13,7 @@ class About extends React.Component {
    
     return (
      <>
-     {
      <h1>All about Leah and Susan</h1>
-     }
      </>
   );
 }
