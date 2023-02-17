@@ -1,30 +1,41 @@
 import React from 'react';
-import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import {Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import BookFormModal from '../components/BookFormModel';
 
 class CreateBook extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false
+        };
+    }
+
+    handleShowModal = () => {
+        this.setState({ showModal: true });
+    }
+
+    handleHideModal = () => {
+        this.setState({ showModal: false });
+    }
+
+    handleSubmit = (book) => {
+        // Call the parent component's onSubmit function with the book object
+        this.props.onSubmit(book);
+    }
 
     render() {
         return (
-            <Container className='mt-5'>
-                <Form onSubmit={this.props.handleSubmit}>
-                    <Form.Group controlid="title">
-                        <Form.Label>Title</Form.Label>
-                        <Form.Control type="text"/>
-                    </Form.Group>
-                    <Form.Group controlid="description">
-                        <Form.Label>Description</Form.Label>
-                        <Form.Control type="text"/>
-                    </Form.Group>
-                    <Form.Group controlid="status">
-                        <Form.Check type="checkbox" label="Available" />
-                    </Form.Group>
-                    {/* <Button type="submit">Add Book</Button> */}
-                    <Button variant="outline-secondary"onClick={this.handleButtonClick}>Add Books</Button>
-                </Form>
+            <Container className="mt-5">
+                <Button variant="outline-secondary" onClick={
+                    () => this.handleShowModal()}>Add Book</Button>
+                <BookFormModal
+                    show={this.state.showModal}
+                    onSubmit={this.handleSubmit}
+                    onHide={this.handleHideModal}
+                />
             </Container>
-        )
+        );
     }
 }
 

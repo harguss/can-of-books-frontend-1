@@ -5,7 +5,7 @@ import "./App.css";
 import CreateBook from './components/CreateBook';
 
 
-import Button from 'react-bootstrap/Button'; 
+import Button from 'react-bootstrap/Button';
 // import About from './About.js';
 // import Nav from "./Nav";
 
@@ -50,7 +50,8 @@ class App extends React.Component {
       let url = `${SERVER}/books`;
       let createdBook = await axios.post(url, newBookObject);
       console.log('createdBook', createdBook);
-      this.setState({books:[...this.state.books, createdBook.data],
+      this.setState({
+        books: [...this.state.books, createdBook.data],
       });
     } catch (error) {
       console.log('We have an error: ', error.response.data);
@@ -61,10 +62,10 @@ class App extends React.Component {
     try {
       let url = `${SERVER}/books/${id}`;
       await axios.delete(url);
-      let updatedBooks = this.state.books.filter((book) => 
+      let updatedBooks = this.state.books.filter((book) =>
         book._id !== id
       );
-      this.setState({books: updatedBooks})
+      this.setState({ books: updatedBooks })
     } catch (error) {
       console.log('We have an error: ', error.response.data);
     }
@@ -87,28 +88,28 @@ class App extends React.Component {
     ));
     return (
       <>
-      <section>
-        <header>
-          <h1>Good Reads</h1>
-        </header>
-       <main className="carousel-container">
-          {this.state.books.length > 0 ? (
-            <Carousel>{books}</Carousel>
-          ) : (
-            <p>The book collection is empty.</p>
-          )}
-        
-          
-          
-        </main>
-        
-        <CreateBook />
-        
-        {/* <About /> */}
+        <section>
+          <header>
+            <h1>Good Reads</h1>
+          </header>
+          <main className="carousel-container">
+            {this.state.books.length > 0 ? (
+              <Carousel>{books}</Carousel>
+            ) : (
+              <p>The book collection is empty.</p>
+            )}
+
+
+
+          </main>
+
+          <CreateBook />
+
+          {/* <About /> */}
         </section>
       </>
-  );
-}
+    );
+  }
 }
 
 
