@@ -2,11 +2,11 @@ import React from "react";
 import axios from "axios";
 import { Carousel } from "react-bootstrap";
 import "./App.css";
+import "./books";
+
 import CreateBook from './components/CreateBook';
-
-
-import Button from 'react-bootstrap/Button';
-// import About from './About.js';
+// import Button from 'react-bootstrap/Button';
+import "./components/About.js";
 // import Nav from "./Nav";
 
 let SERVER = process.env.REACT_APP_SERVER;
@@ -103,9 +103,11 @@ class App extends React.Component {
 
           </main>
 
-          <CreateBook />
+          {/* <CreateBook /> */}
+          <CreateBook handleBookSubmit={this.handleBookSubmit} />
 
-          {/* <About /> */}
+
+
         </section>
       </>
     );
