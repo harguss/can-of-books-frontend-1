@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import Books from "./components/Books.js";
 import Header from "./components/Header/Header.js";
 import CreateBook from "./components/CreateBook.js";
-import "./components/About.js";
+import "./components/About/About.js";
 // import Nav from "./Nav";
 
 let SERVER = process.env.REACT_APP_SERVER;

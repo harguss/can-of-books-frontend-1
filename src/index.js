@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import About from './components/About';
-import Header from './components/Header.js';
+import './components/css/index.css';
+import App from './App.js';
+
+import Header from './components/Header/Header.js';
+import About from './components/About/About.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter,
 createRoutesFromElements,
